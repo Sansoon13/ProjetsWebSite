@@ -1,0 +1,83 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+#panier{
+  margin-left:200px;
+}
+#menu li a{
+    color: white;
+}
+#menu .active{
+  border:1px solid orange;
+  border-radius:10px;
+  background-color:orange;
+  color:white;
+}
+.navbar-nav{
+  position:relative;
+  overflow:hidden;
+}
+#menu li a{
+  border-radius:10px;
+}
+#menu li a:hover{
+  background-color:orange;
+  color:white;
+}
+.navbar-toggler .navbar-toggler-icon{
+    font-size: 25px;
+    border-radius: 7px;
+    background-color: rgb(255, 158, 32);
+    
+}
+.infoPlus{
+    position:relative;
+}
+.infoPlus i{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top: 5%;
+    font-size: 20px;
+    color:#F3B071;
+
+}
+.product{
+    border:1px solid #F3B071 ;
+    border-radius:15px;
+    margin: 10px;
+    position: relative;
+    height: 200px;
+
+}
+.product img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.fill{
+    object-fit: cover;
+}
+main .topPage{
+    border:1px solid white;
+    border-radius:15px;
+}
+
+main .text-center{
+    border:1px solid white;
+    border-radius:15px;
+}
+main .bottomPage .col{
+    border:1px solid #F3B071;
+    border-radius:15px;
+    margin:2%;
+}
