@@ -27,7 +27,7 @@ public class Product {
 	@Column(name="product_price")
 	private String price;
 	@Column(name="product_ingred_products")
-	@OneToMany(mappedBy = "productId")
+//	@OneToMany(mappedBy = "productId")
 	private Set<IngredProduct> ingredProducts;
 	@Column(name="product_description")
 	private String description;
@@ -36,7 +36,7 @@ public class Product {
 	private Set<Evaluation> evaluations;
 	
 	@Column(name="product_product_tags")
-	@OneToMany(mappedBy = "productId")
+//	@OneToMany(mappedBy = "productId")
 	private Set<ProductTag> productTags;
 	
 	public Product() {
@@ -70,6 +70,7 @@ public class Product {
 		return id;
 	}
 	public void setId(Long id) {
+		
 		this.id = id;
 	}
 	public String getTitle() {

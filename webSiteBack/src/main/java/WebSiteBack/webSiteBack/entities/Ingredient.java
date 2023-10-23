@@ -18,9 +18,10 @@ public class Ingredient {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name="ingredient_id")
 	private Long id;
-	@Column(name="ingredient_title")
+	@Column(name="ingredient_title",nullable = false)
 	private String title;
-	@OneToMany(mappedBy = "ingredientId")
+//	@OneToMany(mappedBy = "ingredientId")
+//	@Column(name="ingredient_ingredProduct",nullable = false)
 	private Set<IngredProduct> ingredProduct;
 	
 	public Ingredient() {

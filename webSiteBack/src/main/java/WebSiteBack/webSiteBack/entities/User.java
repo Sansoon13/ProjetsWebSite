@@ -41,7 +41,6 @@ public class User {
 	@Column(name="user_date_entry")
 	private LocalDate dateEntry;
 	@Column(name="user_role")
-	@Enumerated
 	private Role role;
 	@Column(name="user_evaluations")
 	private Set<Evaluation> evaluations;

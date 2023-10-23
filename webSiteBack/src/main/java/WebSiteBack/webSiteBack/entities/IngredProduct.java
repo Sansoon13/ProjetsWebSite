@@ -21,17 +21,17 @@ public class IngredProduct {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name="ingred_product_id")
 	private Long id;
-	@ManyToOne
-	@JoinColumn(name = "ingred_product_ingredient_id",foreignKey = @ForeignKey(name="ingred_product_ingredient_id_fk"))
-	private Long ingredientId;
-	@ManyToOne
-	@JoinColumn(name = "ingred_product_product_id",foreignKey = @ForeignKey(name="ingred_product_product_id_fk"))
-	private Long productId;
+//	@ManyToOne
+//	@JoinColumn(name = "ingred_product_ingredient_id",foreignKey = @ForeignKey(name="ingred_product_ingredient_id_fk"))
+	private Ingredient ingredientId;
+//	@ManyToOne
+//	@JoinColumn(name = "ingred_product_product_id",foreignKey = @ForeignKey(name="ingred_product_product_id_fk"))
+	private Product productId;
 	
 	public IngredProduct() {
 		super();
 	}
-	public IngredProduct(Long id, Long ingredientId, Long productId) {
+	public IngredProduct(Long id, Ingredient ingredientId, Product productId) {
 		super();
 		this.id = id;
 		this.ingredientId = ingredientId;
@@ -43,16 +43,16 @@ public class IngredProduct {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Long getIngredientId() {
+	public Ingredient getIngredientId() {
 		return ingredientId;
 	}
-	public void setIngredientId(Long ingredientId) {
+	public void setIngredientId(Ingredient ingredientId) {
 		this.ingredientId = ingredientId;
 	}
-	public Long getProductId() {
+	public Product getProductId() {
 		return productId;
 	}
-	public void setProductId(Long productId) {
+	public void setProductId(Product productId) {
 		this.productId = productId;
 	}
 	@Override

@@ -21,9 +21,10 @@ public class ConfigSecurity {
 	SecurityFilterChain filterChain(HttpSecurity http)throws Exception{
 		http.csrf(csrf -> csrf.disable());
 		http.authorizeHttpRequests(auth->{
-			auth.requestMatchers("").permitAll()
-			.requestMatchers("/swagger-ui/**","/v3/**","/swagger-ui.html","/api/demo/post").permitAll();
-		});
+			auth.requestMatchers("").hasAnyRole("USER","ADMIN")
+			.requestMatchers("/swagger-ui/**","/v3/**","/swagger-ui.html","/api/demo/post").permitAll()
+			.anyRequest().permitAll();
+		}); 
 		http.sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
 		http.httpBasic(Customizer.withDefaults());

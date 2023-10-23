@@ -3,18 +3,23 @@ package WebSiteBack.webSiteBack.entities;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="evaluation")
 public class Evaluation {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	private String rating;
 	private String comment;
-	@ManyToOne
+	//@ManyToOne
 	private User author;
-	@ManyToOne
+	//@ManyToOne
 	private Product product;
 	
 	public Evaluation() {
