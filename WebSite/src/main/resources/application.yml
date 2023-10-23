@@ -1,0 +1,42 @@
+logging:
+  file:
+    name: logs/application.log
+  level:
+    com:
+      example:
+        demo:
+          services: trace
+    root: info
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root@123
+    url: jdbc:mysql://localhost:3306/web
+    username: root
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: false 
+ 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: play.in.sbjf@gmail.com
+    password: cvww odfl wezo zeul
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+server:
+  servlet:
+    context-path: /web
