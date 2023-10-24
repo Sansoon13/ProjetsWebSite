@@ -1,0 +1,113 @@
+<main class="container-fluid">
+    <div class="container mt-4 h-100">
+      <div class="row my-5">
+        <div class="container p-1 bg-light rounded rounded-pill shadow-sm w-50">
+          <div class="input-group" >
+            <div class="input-group-prepend z-2">
+              <button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+            </div>
+            <input type="search" placeholder="What're you searching for?"  aria-describedby="button-addon2" class="form-control border-0 bg-light">
+            
+                <div class="input-group-prepend">
+                    <button id="button-addon2" data-bs-target="#filter" type="submit" class="btn btn-link text-warning" (click)="showFilterMenu()"><i *ngIf="!showFilter" class="bi bi-caret-down-fill"></i>
+                        <i *ngIf="showFilter" class="bi bi-caret-up-fill"></i></button>
+                </div>
+          </div>
+          
+          <ng-container *ngIf="showFilter">
+          <div class="border rounded bg-light h-100  " id="filter">
+            <a class="border mx-3 my-3">filter 3</a><a class="border mx-3 my-3">filter 2</a><a class="border mx-3 my-3">filter 1</a>
+          </div>
+        </ng-container>
+        </div>
+          
+      </div>
+      <div class="row ">
+        <div class="col px-0 product">
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+          <div class="col px-0 product">
+           
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+  
+          <div class="col px-0 product">
+           
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+        <div class="col px-0 product">
+         
+          <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+          <div class="position-absolute bottom-0 start-0 mx-2">
+            <h5>titre produit</h5>
+            <p>description rapide</p>
+          </div>
+        </div>
+        <div class="col px-0 product">
+          <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+          <div class="position-absolute bottom-0 start-0 mx-2">
+            <h5>titre produit</h5>
+            <p>description rapide</p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col px-0 product">
+            
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+          <div class="col px-0 product">
+           
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+    
+          <div class="col px-0 product">
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <img class="fill"  src="https://img.passeportsante.net/1200x675/2022-10-20/shutterstock-2009487272.webp" alt="MDN Logo" />
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+          <div class="col px-0 product">
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+          <div class="col px-0 product">
+            <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
+            <div class="position-absolute bottom-0 start-0 mx-2">
+              <h5>titre produit</h5>
+              <p>description rapide</p>
+            </div>
+          </div>
+  
+        </div>
+      
+  
+    </div>
+  
+  
+  </main>

@@ -1,0 +1,48 @@
+
+#panier{
+    margin-left:200px;
+  }
+  #menu li a{
+      color: white;
+  }
+  #menu .active{
+    border:1px solid orange;
+    border-radius:10px;
+    background-color:orange;
+    color:white;
+  }
+  .navbar-nav{
+    position:relative;
+    overflow:hidden;
+  }
+  #menu li a{
+    border-radius:10px;
+  }
+  #menu li a:hover{
+    background-color:orange;
+    color:white;
+  }
+  .navbar-toggler .navbar-toggler-icon{
+      font-size: 25px;
+      border-radius: 7px;
+      background-color: rgb(255, 158, 32);
+      
+  }
+  .infoPlus{
+      position:relative;
+  }
+  .infoPlus i{
+      position:absolute;
+      top:0;
+      right:0;
+      margin-top: 5%;
+      font-size: 20px;
+      color:#F3B071;
+  
+  }
+  #sidebar{
+    height: 100%;
+    width: 50%;
+    background-color: whitesmoke;
+    color:black
+  }

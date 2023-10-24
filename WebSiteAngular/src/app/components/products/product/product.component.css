@@ -1,0 +1,36 @@
+.product{
+    border:2px solid #F3B071 ;
+    border-radius:15px;
+    margin: 10px;
+    position: relative;
+    height: 250px;
+    
+    color: white;
+}
+.product img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.product h5, .product p{
+    font-weight: bold;
+    color: rgb(233, 220, 220);
+    text-shadow: rgba(0, 0, 0, 0.87) -3px 2px 2px;
+}
+
+.infoPlus{
+    position:relative;
+}
+.infoPlus i{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color:#F3B071;
+
+}
