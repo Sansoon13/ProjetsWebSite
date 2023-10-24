@@ -52,10 +52,10 @@ public class Category {
 	public void setVignette(byte[] vignette) {
 		this.vignette = vignette;
 	}
-	public Set<CategoryProduct> getCategoryProduct() {
+	public Set<CategoryProduct> getProducts() {
 		return products;
 	}
-	public void setCategoryProduct(Set<CategoryProduct> products) {
+	public void setProducts(Set<CategoryProduct> products) {
 		this.products=products;
 	}
 	

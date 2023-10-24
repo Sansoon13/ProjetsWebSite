@@ -29,9 +29,11 @@ public class Evaluation {
 	@ManyToOne
 	@JoinColumn(name="evaluation_product_id",foreignKey = @ForeignKey(name="evaluation_product_id_fk"))
 	private Product product;
+	
 	public Evaluation() {
 		super();
 	}
+	
 	public Evaluation(Long id, Double rating, String comment, User author, Product product) {
 		super();
 		this.id = id;

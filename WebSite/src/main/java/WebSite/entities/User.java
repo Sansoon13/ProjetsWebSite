@@ -1,25 +1,37 @@
 package WebSite.entities;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Objects;
 import java.util.Set;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import io.micrometer.common.lang.NonNull;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
+import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.ForeignKey;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
 
 @Entity
 @Table(name="user")
-public class User {
+public class User implements UserDetails{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="user_id")
@@ -31,10 +43,10 @@ public class User {
 	@Column(name="user_username",unique = true,nullable = false)
 	private String username;
 	@Column(name="user_email",unique = true,nullable = false)
-	@Pattern(regexp="")
+	//@Pattern(regexp="")
 	private String email;
 	@Column(name="user_password",nullable = false)
-	@Pattern(regexp="")
+	//@Pattern(regexp="")
 	private String password;
 	@Column(name="user_image",columnDefinition = "LONGBLOB")
 	private byte[] image;
@@ -43,6 +55,12 @@ public class User {
 	private LocalDate dateEntry;
 	@OneToMany(mappedBy = "author")
 	private Set<Evaluation> evaluations;
+	@Enumerated(EnumType.STRING)
+	private Role role;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="user_adresse_id",foreignKey = @ForeignKey(name="user_adresse_id_fk"))
+	private Adresse adresse;
+	
 	
 	public User() {
 		super();
@@ -126,6 +144,22 @@ public class User {
 
 
 
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
+		this.adresse = adresse;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -143,6 +177,32 @@ public class User {
 			return false;
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return Arrays.asList(new SimpleGrantedAuthority("ROLE_"+this.getClass().getSimpleName().toUpperCase()));
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		return true;
 	}
 	
 	

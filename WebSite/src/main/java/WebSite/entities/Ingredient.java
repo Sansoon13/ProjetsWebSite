@@ -20,17 +20,17 @@ public class Ingredient {
 	@Column(name="ingredient_name")
 	private String name;
 	@OneToMany(mappedBy = "ingredient")
-	private Set<IngredProd> ingredprod;
+	private Set<IngredProd> produits;
 	
 	public Ingredient() {
 		super();
 	}
 
-	public Ingredient(Long id, String name, Set<IngredProd> ingredprod) {
+	public Ingredient(Long id, String name, Set<IngredProd> produits) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.ingredprod = ingredprod;
+		this.produits = produits;
 	}
 
 	public Long getId() {
@@ -49,12 +49,14 @@ public class Ingredient {
 		this.name = name;
 	}
 
-	public Set<IngredProd> getIngredProd() {
-		return ingredprod;
+	
+
+	public Set<IngredProd> getProduits() {
+		return produits;
 	}
 
-	public void setIngredProd(Set<IngredProd> ingredprod) {
-		this.ingredprod = ingredprod;
+	public void setProduits(Set<IngredProd> produits) {
+		this.produits = produits;
 	}
 
 	@Override

@@ -17,7 +17,7 @@ import jakarta.transaction.Transactional;
 
 @Repository
 public interface EvaluationRepository extends JpaRepository<Evaluation,Long>{
-	Optional<Evaluation> findByRating(String rating);
+	Optional<Evaluation> findByRating(Double rating);
 	Optional<Evaluation> findByComment(String comment);
 	Optional<Evaluation> findById(Long id);
 	List<Evaluation> findByAuthor(User author);

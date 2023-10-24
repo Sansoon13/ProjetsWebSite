@@ -14,7 +14,8 @@ import WebSite.entities.Ingredient;
 public interface IngredientRepository extends JpaRepository<Ingredient,Long> {
 	
 	Optional<Ingredient> findByName(String name);
+	List<Ingredient> findByNameContaining(String name);
 	
-	@Query("from Ingredient i left join fetch i.ingredprod where i.id=:id")
-	List<Ingredient> findByIdFecthIngredProd(@Param("id")Long id);
+	@Query("from Ingredient i left join fetch i.produits where i.id=:id")
+	Ingredient findByIdFecthProduits(@Param("id")Long id);
 }

@@ -21,6 +21,8 @@ public class Product {
 	private Long id;
 	@Column(name="product_title",unique = true ,nullable = false)
 	private String title;
+	@Column(name="product_price",nullable = false)
+	private Double price;
 	@Column(name="product_description",columnDefinition = "TEXT")
 	private String description;
 	@Column(name="product_image",columnDefinition = "LONGBLOB")
@@ -49,7 +51,10 @@ public class Product {
 	}
 	
 	public void evaluationRatingAvg() {
-		
+		if(!evaluations.isEmpty()) {
+			evaluations.stream().map(e->e.getRating()).forEach(r->{avgRating+=r;});
+			avgRating/=evaluations.size();
+		}
 	}
 
 	public Long getId() {

@@ -9,13 +9,18 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import WebSite.entities.Category;
+import WebSite.entities.Evaluation;
 import WebSite.entities.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Long> {
 	//All
-	@Query("from Produc p left join fetch p.evaluations")
+	@Query("from Product p left join fetch p.evaluations")
 	List<Product> findAllFetchEvaluations();
+	
+	@Query("from Product p left join fetch p.evaluations left join fetch p.ingredients")
+	List<Product> findAllFetchEvaluationsAndIngredients();
 	
 	//Chargement des collections:
 	@Query("from Product p left join fetch p.evaluations where p.id=:id")
@@ -28,11 +33,11 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 	Optional<Product> findByIdFetchCategories(@Param("id")Long id);
 	
 	@Query("from Product p "
-			+ "left join fetch p.evaluations"
-			+ "left join fetch p.ingredients"
-			+ "left join fetch p.categories"
-			+ "where p.id=:id ")
-	Optional<Product> findIdFetchAll(@Param("id")Long id);
+			+ "left join fetch p.evaluations "
+			+ "left join fetch p.ingredients "
+			+ "left join fetch p.categories "
+			+ "where p.id=:id")
+	Optional<Product> findByIdFetchAll(@Param("id")Long id);
 	
 	//Requete de recherche par attributs:
 	Optional<Product> findByTitle(String title);
@@ -44,4 +49,10 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 	
 	@Query("select e.product from Evaluation e GROUP BY e.product having AVG(e.rating)>=:avgRating")
 	Set<Product> findByAvgRating(double avgRating);
+	
+	@Query("from Product p left join fetch p.categories c where c.category=:category")
+	Set<Product> findByCategories(@Param("category")Category category);
+	
+//	@Query("from Product p left join fetch p.evaluations e where e.evaluation=:evaluation")
+//	Set<Product> findByEvaluations(@Param("evaluation")Evaluation evaluation);
 }

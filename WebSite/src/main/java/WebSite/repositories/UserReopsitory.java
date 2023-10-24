@@ -14,9 +14,11 @@ import WebSite.entities.User;
 public interface UserReopsitory extends JpaRepository<User, Long> {
 	Optional<User> findByUsername(String username);
 	Optional<User> findByEmail(String email);
+	Optional<User> findByFirstName(String firstName);
+	Optional<User> findByLastName(String lastName);
 	
 	@Query("from User u left join fetch u.evaluations where u.id=:id")
-	List<User> findByIdFetchEvaluations(@Param("id")Long id);
+	Optional<User> findByIdFetchEvaluations(@Param("id")Long id);
 	
 	
 }
