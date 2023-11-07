@@ -11,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 
 @Entity
 @Table(name="evaluation")
@@ -20,7 +21,7 @@ public class Evaluation {
 	@Column(name="evaluation_id")
 	private Long id;
 	@Column(name="evaluation_rating")
-	private Double rating;
+	private int rating;
 	@Column(name="evaluation_comment")
 	private String comment;
 	@ManyToOne
@@ -34,7 +35,7 @@ public class Evaluation {
 		super();
 	}
 	
-	public Evaluation(Long id, Double rating, String comment, User author, Product product) {
+	public Evaluation(Long id, int rating, String comment, User author, Product product) {
 		super();
 		this.id = id;
 		this.rating = rating;
@@ -48,12 +49,15 @@ public class Evaluation {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Double getRating() {
+	
+	public int getRating() {
 		return rating;
 	}
-	public void setRating(Double rating) {
+
+	public void setRating(int rating) {
 		this.rating = rating;
 	}
+
 	public String getComment() {
 		return comment;
 	}

@@ -1,0 +1,40 @@
+.container-fluid{
+    height: 500px;
+    color: white;
+}
+#divider p{
+    display: flex;
+}
+
+#divider:after,#divider:before{
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: aliceblue;
+    
+}
+#btnLogin{
+    color: white;
+    padding:10px 50px 10px 50px;
+    background-color:#c76000 ;
+    
+}
+#btnL{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#btnLogin:hover{
+    transform: translate(-5%,-5%);
+    background-color: transparent;
+    border:1px solid #c76000; 
+    color: #c76000;
+}
+#btnGoogle{
+    color: white;
+}
+#btnG{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

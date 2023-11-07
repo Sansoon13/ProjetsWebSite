@@ -3,6 +3,8 @@ package WebSite.entities;
 import java.util.Objects;
 import java.util.Set;
 
+import org.aspectj.weaver.tools.Trace;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,12 +19,12 @@ public class Ingredient {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="ingredient_name")
+	@Column(name="ingredient_name",unique = true)
 	private String name;
 	@OneToMany(mappedBy = "ingredient")
 	private Set<IngredProd> produits;
 	
-	public Ingredient() {
+	public Ingredient() { 
 		super();
 	}
 
@@ -31,6 +33,18 @@ public class Ingredient {
 		this.id = id;
 		this.name = name;
 		this.produits = produits;
+	}
+	
+
+	public Ingredient(String name, Set<IngredProd> produits) {
+		super();
+		this.name = name;
+		this.produits = produits;
+	}
+
+	public Ingredient(String name) {
+		super();
+		this.name = name;
 	}
 
 	public Long getId() {

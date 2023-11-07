@@ -3,6 +3,8 @@ package WebSite.entities;
 import java.util.Objects;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,8 +27,8 @@ public class Product {
 	private Double price;
 	@Column(name="product_description",columnDefinition = "TEXT")
 	private String description;
-	@Column(name="product_image",columnDefinition = "LONGBLOB")
-	private byte[] image;
+	@Column(name="product_image")
+	private String image;
 	@Transient
 	private Double avgRating;
 	@OneToMany(mappedBy = "product")
@@ -96,13 +98,22 @@ public class Product {
 		this.evaluations = evaluations;
 	}
 
+	public Double getPrice() {
+		return price;
+	}
 
-	public byte[] getImage() {
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+
+	public String getImage() {
 		return image;
 	}
 
 
-	public void setImage(byte[] image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 

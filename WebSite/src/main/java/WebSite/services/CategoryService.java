@@ -3,6 +3,8 @@ package WebSite.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.management.RuntimeErrorException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,11 +32,17 @@ public class CategoryService {
 		return cateRepo.save(category);
 	}
 	
-	public Optional<Category> findByTitle(String title){
+	public Category findByTitle(String title){
 		if(title==null || title.isBlank()) {
 			throw new RuntimeException("title is null");
 		}
-		return cateRepo.findByTitle(title);
+		return cateRepo.findByTitle(title).orElseThrow(()->{
+			throw new RuntimeException("unknown title");
+		}
+			
+		);
+			
+		
 	}
 	
 	public List<Category> findByTitleContaining(String title){
@@ -63,5 +71,20 @@ public class CategoryService {
 		return cateRepo.findByProducts(product);
 		
 	}
+	
+	public List<Category> findAll(){
+		return cateRepo.findAll();
+	}
+	
+	public Category findById(Long id) {
+		if(id==null) {
+			throw new RuntimeException("id cannot be null");
+		}
+		return cateRepo.findById(id).orElseThrow(()->{
+			throw new RuntimeException("unknown Id");
+		});
+	}
+	
+	
 	
 }

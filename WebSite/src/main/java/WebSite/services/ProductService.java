@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import WebSite.entities.Category;
 import WebSite.entities.Evaluation;
+import WebSite.entities.Ingredient;
 import WebSite.entities.Product;
 import WebSite.repositories.ProductRepository;
 
@@ -87,10 +88,12 @@ public class ProductService {
 			throw new RuntimeException("id cannot be null");
 		}
 		return productRepo.findByIdFetchIngredients(id).orElseThrow(()->{
-			throw new RuntimeException("unkown id");
+			throw new RuntimeException("id unknown");
 		});
+		
 	}
 	
+		
 	public Product findByIdWithCategories(Long id) {
 		if(id==null) {
 			throw new RuntimeException("id cannot be null");
@@ -123,7 +126,7 @@ public class ProductService {
 		return productRepo.findByTitle(title);
 	}
 	
-	public Set<Product> findByPriceBetween(double priceLow,double priceHigh){
+	public Set<Product> findByPriceBetween(Double priceLow,Double priceHigh){
 		if(priceLow>priceHigh) {
 			throw new RuntimeException("priceLow > priceHigh");
 		}
@@ -133,7 +136,7 @@ public class ProductService {
 		return productRepo.findByPriceBetween(priceLow, priceHigh);
 		
 	}
-	public Set<Product> findByAvgRating(double avgRating){
+	public Set<Product> findByAvgRating(Double avgRating){
 		if(avgRating>5 || avgRating<1){
 			throw new RuntimeException("invalid rating");
 		}
@@ -154,6 +157,9 @@ public class ProductService {
 		return productRepo.findByCategories(category);
 	}
 	
+	public List<Product> findAllFetchCat(){
+		return productRepo.findAllFetchCategories();
+	}
 	
 }
 	

@@ -17,7 +17,7 @@ import org.springframework.web.server.ResponseStatusException;
 import WebSite.entities.User;
 import WebSite.exceptions.UserException;
 import WebSite.request.UserRequest;
-import WebSite.response.UserResponse;
+import WebSite.response.user.UserResponse;
 import WebSite.services.UserService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 

@@ -1,4 +1,4 @@
-package WebSite.response;
+package WebSite.response.user;
 
 import java.time.LocalDate;
 

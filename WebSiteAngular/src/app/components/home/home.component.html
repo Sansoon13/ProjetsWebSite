@@ -1,11 +1,15 @@
 <main class="container-fluid">
-    <div class="container mt-4 h-100 topPage">
+    <div class="mx-5 mt-4 h-100 topPage">
         <div class="row h-100">
             <div class="col">
                 <div class="row">
                     <div>
-                    <img id="imagepizza" src="https://img.freepik.com/photos-gratuite/pizza-fraichement-italienne-tranche-fromage-mozzarella-ia-generative_188544-12347.jpg"
-                    height="100%" width="100%" class="m-2"/></div>
+
+                        <!-- <app-carousel></app-carousel> -->
+                        <img src="https://img.freepik.com/photos-gratuite/pizza-fraichement-italienne-tranche-fromage-mozzarella-ia-generative_188544-12347.jpg" class="d-block w-100" alt="...">
+
+
+                    </div>
                 </div>
                 <div class="row">
                     <h3 class="mt-4">TITRE ACCROCHEUR</h3>
@@ -17,26 +21,52 @@
                 </div>
             </div>
             <div class="col col-sm h-100 text-center">
-                <div class="row ">
-                    <div class="col product">
+                <div class="row">
+                    <ng-container *ngFor="let p of products">
+                        <div [ngClass]="{'product' :productActif!=p,'productInfo' : productActif==p}">
+                            <div  class="infoPlus"><a class="" (click)="afficherInfo(p)">
+                              <i class="bi bi-file-plus-fill"></i>
+                              <i *ngIf="productActif==p" class="bi bi-file-minus-fill"></i></a></div>
+                            <img class="fill p-0" src="{{p.image}}" alt="product image" />
+                            <div class="position-absolute bottom-0 start-0 mx-2">
+                                <h6 style="font-size: 15px;">{{p.title}}</h6>
+                                <p style="font-size: 15px;">{{p.price}} €</p>
+                                <!-- <p>{{p.description}}</p> -->
+                            </div>
+                        </div>
+                        <ng-container *ngIf="productActif==p">
+                        <div class="infoProduct bg-light">
                         
-                        <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
-                    </div>
-                    <div class="col product">
-                        <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
-                    </div>
-                </div>
-                <div class="row  ">
-                    <div class="col product">
+                            <h6 class="productTitle mx-2 my-2">{{p.title}}</h6>
+                            <span class="mx-2 ">{{p.price}} €</span>
                         
-                        <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
-                    </div>
-                    <div class="col product">
-                        <div class="infoPlus"><i class="bi bi-plus-square"></i></div>
-                    </div>
+                            <div class="star-rating mx-2 my-1 ">
+                              <div class="percent" [ngStyle]="{width:rating+'%'}"></div>
+                            </div>
+                         
+                          <div class="d-flex flex-row container ingredient-container ">
+                          <ng-container *ngFor="let i of ingredients">
+                                <div class="ingredient">{{i.name}},</div>
+            
+                             </ng-container>
+                            </div> 
+                          <div class="d-flex flex-row container tags mx-2 mt-1">
+                            <ng-container *ngFor="let c of categoriesProduct">
+                              <img src="{{c.vignette}}" width="20%" height="20%" class="mx-1">
+                             </ng-container>
+                            
+                          </div>
+                           
+                         
+                          
+                        </div>
+                      </ng-container>
+                    </ng-container>
+
+
                 </div>
             </div>
-        </div>
+    </div>
     </div>
 
     <div class="container bottomPage">

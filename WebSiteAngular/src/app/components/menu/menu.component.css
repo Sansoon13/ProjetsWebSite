@@ -2,14 +2,12 @@
 #panier{
     margin-left:200px;
   }
-  #menu li a{
-      color: white;
-  }
+  
   #menu .active{
-    border:1px solid orange;
     border-radius:10px;
-    background-color:orange;
-    color:white;
+    background-color: #c76000;
+    padding: 5px 10px 5px 10px;
+   
   }
   .navbar-nav{
     position:relative;
@@ -17,10 +15,15 @@
   }
   #menu li a{
     border-radius:10px;
+    color: #f7f7f7;
+    font-family: "Oswald";
+    font-size: 16px;
+    letter-spacing: 1px;
+
   }
   #menu li a:hover{
-    background-color:orange;
-    color:white;
+    background-color: #c76000;
+    padding: 5px 10px 5px 10px;
   }
   .navbar-toggler .navbar-toggler-icon{
       font-size: 25px;
@@ -28,18 +31,7 @@
       background-color: rgb(255, 158, 32);
       
   }
-  .infoPlus{
-      position:relative;
-  }
-  .infoPlus i{
-      position:absolute;
-      top:0;
-      right:0;
-      margin-top: 5%;
-      font-size: 20px;
-      color:#F3B071;
   
-  }
   #sidebar{
     height: 100%;
     width: 50%;

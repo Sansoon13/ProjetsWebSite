@@ -19,15 +19,15 @@ public class Category {
 	private Long id;
 	@Column(name="category_title")
 	private String title;
-	@Column(name="category_vignette",columnDefinition = "LONGBLOB")
-	private byte[] vignette;
+	@Column(name="category_vignette")
+	private String vignette;
 	@OneToMany(mappedBy = "category")
 	private Set<CategoryProduct> products;
 	
 	public Category() {
 		super();
 	}
-	public Category(Long id, String title, byte[] vignette, Set<CategoryProduct> products) {
+	public Category(Long id, String title, String vignette, Set<CategoryProduct> products) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -46,10 +46,11 @@ public class Category {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public byte[] getVignette() {
+	
+	public String getVignette() {
 		return vignette;
 	}
-	public void setVignette(byte[] vignette) {
+	public void setVignette(String vignette) {
 		this.vignette = vignette;
 	}
 	public Set<CategoryProduct> getProducts() {

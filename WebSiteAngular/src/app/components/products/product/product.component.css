@@ -1,11 +1,13 @@
 .product{
-    border:2px solid #F3B071 ;
     border-radius:15px;
-    margin: 10px;
+    flex: 1 0 calc(19% - 4px);
+    margin: 5px;
     position: relative;
     height: 250px;
-    
+    width: 150px;
     color: white;
+    filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
+    
 }
 .product img{
     height: 100%;
@@ -15,10 +17,9 @@
     object-fit: cover;
 }
 
-.product h5, .product p{
+.product h6, .product p{
     font-weight: bold;
-    color: rgb(233, 220, 220);
-    text-shadow: rgba(0, 0, 0, 0.87) -3px 2px 2px;
+    color: rgb(245, 236, 236);
 }
 
 .infoPlus{
@@ -31,6 +32,211 @@
     margin-top: 5%;
     margin-right: 5%;
     font-size: 20px;
-    color:#F3B071;
+    color:#ffffff;
+    
 
 }
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*  */
+.productInfo{
+    border-radius:15px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex: 1 0 calc(23% - 4px);
+    height: 250px;
+    
+    color: white;
+    filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
+}
+.productInfo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.productInfo h6, .productInfo p{
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+}
+.productTitle{
+    color:#c76000                                                                        
+}
+
+.infoProduct{
+    border-bottom-right-radius:15px ;
+    border-top-right-radius: 15px;
+    margin-right: 5px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    color: #000;
+}
+.ingredient{
+   flex: auto;
+   
+    padding: 0;
+}
+
+.ingredient-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.star-rating{
+    position:relative;
+    color:#c76000;
+    display: inline-block;
+    font-size: 25pt;
+    height: 1em;
+    line-height: 1em;
+    overflow: hidden;
+}
+.star-rating:before{
+    content: "\2606\2606\2606\2606\2606";
+    position: absolute;
+    left:0;
+    z-index: 1;
+}
+.star-rating .percent{
+    position: relative;
+    float:left;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.star-rating .percent:after{
+    content: "\2605\2605\2605\2605\2605";
+    color:#c76000;
+}
+
+#searchMenu,#filterMenu{
+    width: 43.5%;
+    margin-top: 0.8%;
+    border-radius: 15px;
+ 
+}
+
+#filterMenu h6{
+    color: #AE431E;
+}
+.rounded{
+    border: 1px solid #8A8635;
+}
+
+#filterMenu label{
+  color: #8A8635;
+  font-size: 15px;
+}
+
+/**/
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #eed5a9;
+  border-radius: 13px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 15px;
+  background: #E9C891;
+  border-radius: 5px;
+
+}
+
+
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 30px;
+  width: 30px;
+background-image: url("/assets/pizzaslider.jpeg");
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+  /*  rotate thumb  */
+  transform: rotateZ(var(--thumb-rotate, 0deg));
+}
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+/*   background-color: #f50; */
+background-image: url("/assets/pizzaslider.jpeg");
+background-size: cover;
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+  transform: rotateZ(var(--thumb-rotate, 0deg));
+}
+
+.range{
+  flex: 1;
+}
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sliderticks span {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  width: 2px;
+  height: 5px;
+  background: #8A8635;
+  line-height: 30px;
+  font-weight: bold;
+  color: #8A8635;
+}
+
+/**/
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 1px;
+  
+  height: 6px;
+  background: #ccc;
+}
+
+#btnFiltre{
+  padding:10px 20px 10px 20px;
+  margin: 3px 0px 3px 3px;
+  border-radius: 5px;
+  background-color: transparent ;
+  border: 1px solid  #8A8635;
+  color: #8A8635;
+  font-weight: bold;
+  font-size: 12px;
+
+
+}
+
+#btnFiltre:hover{
+  background-color: #AE431E;
+  color: #fff;
+  transform: translate(-5%,5%);
+  box-shadow: 5px 5px 5px gray;
+}
+
+
+

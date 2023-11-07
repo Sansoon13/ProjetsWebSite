@@ -13,6 +13,7 @@ import WebSite.entities.Product;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 	Optional<Category> findByTitle(String title);
+	Optional<Category> findById(Long id);
 	List<Category> findByTitleContaining(String title);
 	@Query("from Category c left join fetch c.products where c.id=:id")
 	Optional<Category> findByIdFetchProducts(@Param("id")Long id);

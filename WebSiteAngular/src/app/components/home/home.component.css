@@ -1,34 +1,32 @@
+*{
+    padding:0;
+    margin: 0;
+}
 .product{
-    border:1px solid #F3B071 ;
+    border:2px solid #F3B071 ;
     border-radius:15px;
-    margin: 10px;
+    flex: 1 0 calc(33% - 4px);
+    margin: 5px;
     position: relative;
-    height: 200px;
-
+    height: 250px;
+    width: 150px;
+    color: white;
+    filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
+    
 }
 .product img{
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid #000;
-}
-.fill{
     object-fit: cover;
 }
-main .topPage{
-    border:1px solid white;
-    border-radius:15px;
+
+.product h6, .product p{
+    font-weight: bold;
+    color: rgb(245, 236, 236);
 }
 
-main .text-center{
-    border:1px solid white;
-    border-radius:15px;
-}
-main .bottomPage .col{
-    border:1px solid #F3B071;
-    border-radius:15px;
-    margin:2%;
-}
 .infoPlus{
     position:relative;
 }
@@ -37,7 +35,93 @@ main .bottomPage .col{
     top:0;
     right:0;
     margin-top: 5%;
+    margin-right: 5%;
     font-size: 20px;
-    color:#F3B071;
+    color:#ffffff;
+    
 
+}
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*  */
+.productInfo{
+    border:2px solid #F3B071 ;
+    border-radius:15px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-basis: calc(32% - 50px);
+    height: 250px;
+    
+    color: white;
+    filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
+}
+.productInfo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.productInfo h6, .productInfo p{
+    font-weight: bold;
+    color: rgb(245, 236, 236);
+}
+.productTitle{
+    color:#c76000
+}
+
+.infoProduct{
+    border-bottom-right-radius:15px ;
+    border-top-right-radius: 15px;
+    margin-right: 5px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    color: #000;
+   
+}
+.ingredient{
+   flex: auto;
+   
+    padding: 0;
+}
+
+.ingredient-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.star-rating{
+    position:relative;
+    color:#c76000;
+    display: inline-block;
+    font-size: 25pt;
+    height: 1em;
+    line-height: 1em;
+    overflow: hidden;
+}
+.star-rating:before{
+    content: "\2606\2606\2606\2606\2606";
+    position: absolute;
+    left:0;
+    z-index: 1;
+}
+.star-rating .percent{
+    position: relative;
+    float:left;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.star-rating .percent:after{
+    content: "\2605\2605\2605\2605\2605";
+    color:#fd800a;
 }

@@ -53,4 +53,8 @@ public class IngredientService {
 		}
 		return ingredRepo.findByIdFecthProduits(id);
 	}
+	
+	public List<Ingredient> findAll(){
+		return ingredRepo.findAll();
+	}
 }

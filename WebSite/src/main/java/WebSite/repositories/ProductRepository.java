@@ -19,6 +19,9 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 	@Query("from Product p left join fetch p.evaluations")
 	List<Product> findAllFetchEvaluations();
 	
+	@Query("from Product p left join fetch p.categories")
+	List<Product> findAllFetchCategories();
+	
 	@Query("from Product p left join fetch p.evaluations left join fetch p.ingredients")
 	List<Product> findAllFetchEvaluationsAndIngredients();
 	
@@ -45,10 +48,10 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 	
 	Set<Product> findByTitleContaining(String title);
 	
-	Set<Product> findByPriceBetween(double priceLow,double priceHigh);
+	Set<Product> findByPriceBetween(Double priceLow,Double priceHigh);
 	
 	@Query("select e.product from Evaluation e GROUP BY e.product having AVG(e.rating)>=:avgRating")
-	Set<Product> findByAvgRating(double avgRating);
+	Set<Product> findByAvgRating(Double avgRating);
 	
 	@Query("from Product p left join fetch p.categories c where c.category=:category")
 	Set<Product> findByCategories(@Param("category")Category category);
