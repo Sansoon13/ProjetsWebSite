@@ -1,36 +1,72 @@
-<div class="container-fluid">
-    <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="login h-100 w-50">
-        <div class="row text-center">
-            <h4 class="mt-2">WELCOM BACK</h4>
-            <h6 clas="mt-2"><span class="fw-bolder">Sign up</span> with your email adress and password</h6>
+
+
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row  d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5  p-0 " id="sideImage">
+          <img src="/assets/pizza2.png"
+            class="img-fluid" alt="Sample image">
         </div>
-        <div class="row border rounded mx-5 p-2">
-                <div class="col-12">
-                    <div class="form-group mt-4">
-                        <label for="exampleInputEmail1">Nom d'utilisateur</label>
-                        <input type="username" class="form-control" id="exampleInputUsername" aria-describedby="username" placeholder="Enter username">
-                    </div>
-                    <div class="form-group mt-4">
-                        <label for="exampleInputEmail1">Mot de passe</label>
-                        <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="password" placeholder="Enter password">
-                    </div>
-                    <div class="row mt-2">
-                        <small>Mot de passe oublié ?</small>
-                    </div>
-                    <div class="form-group mt-4" id="btnL">
-                        <button type="submit" class="btn" id="btnLogin">Login</button>
-                    </div>
-                    <div class="divider d-flex align-items-center" id="divider">
-                        <p class="text-center mx-2 mt-3 fw-bolder">OU</p>
-                    </div>
-                    <div class="form-group mt-4" id="btnG">
-                        <button type="submit" class="btn" id="btnGoogle"><i class="bi bi-google"></i></button>
-                    </div>
+        <div class="col-md-9 col-lg-6 col-xl-5 px-4 login">
+          <form>
+            <div class="row d-flex flex-row align-items-center justify-content-center justify-content-lg-center text-center" id="titre">
+                    <h4 class="mb-0 me-3 mt-2">WELCOME BACK</h4>
+                    <h6 class="mt-2"><span class="fw-bolder">Sign up</span> with your Username and Password</h6>
+                
+            </div>
+  
             
-
+  
+            <!-- Username input -->
+            <div class="form-group mt-4">
+                <label for="exampleInputEmail1" id="usernameLabel">Username</label>
+                <input type="username" class="form-control" id="username" aria-describedby="username" placeholder="Enter username">
+            </div>
+            <!-- Password input -->
+            <div class="form-group mt-4">
+                <label for="exampleInputEmail1" id="passwordLabel">Password</label>
+                <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center" id="info">
+              <!-- Checkbox -->
+              <div class="form-check mb-0 mt-3" >
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body" class="mdpForgot text-white">Forgot password?</a>
+            </div>
+  
+            <div class="form-group mt-4" id="btnL">
+                <button type="submit" class="btn" id="btnLogin"><span>Login</span></button>
+            </div>
+            <!--  Divider -->
+            <div class="divider d-flex align-items-center mt-3" id="divider">
+                <p class="text-center fw-bold mx-3 mb-0">Or</p>
+              </div>
+          </form>
+        <div class="buttons d-flex justify-content-center ">
+            <div class="form-group" id="btnG">
+                <button type="button" class="btn" id="btnGoogle"><i class="bi bi-google"></i></button>
+            </div>
+            <div class="form-group" id="btnF">
+                <button type="button" class="btn" id="btnFacebook"><i class="bi bi-facebook"></i></button>
+            </div>
+            <div class="form-group" id="btnT">
+                <button type="button" class="btn" id="btnTwitter"><i class="bi bi-twitter"></i></button>
+            </div>
+        </div>
+        
+        <!-- Register -->
+        <div class="register my-2">
+            <small>Don't have an account ? <a (click)="register()"><span class="fw-bolder">Register</span></a></small>
         </div>
 
         </div>
+      </div>
     </div>
-</div>
+    
+  </section>

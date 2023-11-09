@@ -36,5 +36,14 @@
     height: 100%;
     width: 50%;
     background-color: whitesmoke;
-    color:black
+    color:black;
+    top: 0;
+    position:fixed;
+    z-index: 5;
+  }
+  #sidebar:after{
+    transition: all 0.5s ease-in-out;
+  }
+  .nav{
+    position: fixed;
   }

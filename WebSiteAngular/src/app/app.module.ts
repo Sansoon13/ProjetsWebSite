@@ -12,6 +12,7 @@ import { InfoComponent } from './components/about/info/info.component';
 import { IngredientComponent } from './components/ingredients/ingredient/ingredient.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { ConnexionComponent } from './components/profil/connexion/connexion.component';
+import { RegisterComponent } from './components/profil/register/register.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ConnexionComponent } from './components/profil/connexion/connexion.comp
     InfoComponent,
     IngredientComponent,
     CarouselComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,203 +1,30 @@
-2023-11-07T08:58:18.978+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T08:58:19.357+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T08:58:22.421+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T08:58:22.422+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T08:58:24.753+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : []
-2023-11-07T08:58:24.759+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 0.0
-2023-11-07T08:58:53.515+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T08:58:53.517+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T08:59:03.789+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T08:59:03.793+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : 3.0
-2023-11-07T09:00:50.844+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:00:50.858+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:01:00.383+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : []
-2023-11-07T09:01:00.386+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 0.0
-2023-11-07T09:01:05.542+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : []
-2023-11-07T09:01:05.545+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 0.0
-2023-11-07T09:01:07.728+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:01:07.729+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:01:09.832+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:01:09.839+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 3.0
-2023-11-07T09:01:54.429+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:01:54.432+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:02:08.687+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:02:08.696+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 3.0
-2023-11-07T09:02:11.317+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:02:11.323+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:02:25.444+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:02:25.446+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:02:29.771+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:02:29.782+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 3.0
-2023-11-07T09:02:47.052+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : []
-2023-11-07T09:02:47.054+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 0.0
-2023-11-07T09:02:59.117+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:02:59.130+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : 3.0
-2023-11-07T09:03:10.479+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:03:10.481+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:03:14.409+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:03:14.415+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 3.0
-2023-11-07T09:03:27.787+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:03:27.789+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:03:53.777+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : []
-2023-11-07T09:03:53.778+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 0.0
-2023-11-07T09:03:56.142+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:03:56.144+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:05.700+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:04:05.707+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 3.0
-2023-11-07T09:04:12.326+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:04:12.331+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:21.427+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : []
-2023-11-07T09:04:21.447+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:33.987+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T09:04:33.999+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:44.862+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : []
-2023-11-07T09:04:44.878+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:55.680+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:04:55.688+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:04:58.248+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:04:58.258+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 3.0
-2023-11-07T09:05:07.144+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:05:07.152+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:16.545+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : []
-2023-11-07T09:05:16.551+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:24.286+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : []
-2023-11-07T09:05:24.291+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:32.812+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:05:32.822+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:41.011+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : []
-2023-11-07T09:05:41.017+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:44.124+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:05:44.128+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:05:53.903+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T09:05:53.910+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T09:06:22.086+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : []
-2023-11-07T09:06:22.089+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 0.0
-2023-11-07T09:06:25.021+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:06:25.032+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T09:06:27.142+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:06:27.147+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:06:30.507+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : []
-2023-11-07T09:06:30.512+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 0.0
-2023-11-07T09:06:31.691+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T09:06:31.695+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T09:06:36.837+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:06:36.843+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:17.617+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : []
-2023-11-07T09:07:17.629+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:19.004+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:07:19.013+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 3.0
-2023-11-07T09:07:31.856+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T09:07:31.860+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:33.783+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:07:33.790+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:35.433+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:07:35.436+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:44.904+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:07:44.909+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:53.839+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : []
-2023-11-07T09:07:53.844+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 0.0
-2023-11-07T09:07:55.789+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:07:55.797+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:03.692+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:08:03.709+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T09:08:11.849+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:08:11.855+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:26.993+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:08:26.998+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:28.385+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:08:28.389+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:30.371+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : []
-2023-11-07T09:08:30.376+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:40.539+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : []
-2023-11-07T09:08:40.546+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:42.642+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : []
-2023-11-07T09:08:42.644+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 0.0
-2023-11-07T09:08:53.121+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:08:53.129+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 3.0
-2023-11-07T09:08:55.264+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : []
-2023-11-07T09:08:55.269+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 0.0
-2023-11-07T09:09:07.000+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:09:07.010+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:09:08.881+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : []
-2023-11-07T09:09:08.883+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 0.0
-2023-11-07T09:09:18.273+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : []
-2023-11-07T09:09:18.278+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 0.0
-2023-11-07T09:11:04.348+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:11:04.357+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 3.0
-2023-11-07T09:11:09.138+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:11:09.141+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 3.0
-2023-11-07T09:11:11.979+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : []
-2023-11-07T09:11:11.983+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 0.0
-2023-11-07T09:11:13.752+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : []
-2023-11-07T09:11:13.753+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 0.0
-2023-11-07T09:11:17.578+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : []
-2023-11-07T09:11:17.580+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 0.0
-2023-11-07T09:11:19.635+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : []
-2023-11-07T09:11:19.636+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 0.0
-2023-11-07T09:11:27.414+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : []
-2023-11-07T09:11:27.416+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 0.0
-2023-11-07T09:39:41.991+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T09:39:42.130+01:00  INFO 22380 --- [http-nio-8080-exec-6] W.restController.UserRestController      : 3.0
-2023-11-07T11:43:24.589+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:43:24.749+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 3.0
-2023-11-07T11:44:48.920+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:44:48.922+01:00  INFO 22380 --- [http-nio-8080-exec-4] W.restController.UserRestController      : 3.0
-2023-11-07T11:47:05.661+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:47:05.694+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 3.0
-2023-11-07T11:48:39.508+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:48:39.510+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 3.0
-2023-11-07T11:48:55.664+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:48:55.665+01:00  INFO 22380 --- [http-nio-8080-exec-2] W.restController.UserRestController      : 3.0
-2023-11-07T11:49:17.418+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:49:17.422+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 3.0
-2023-11-07T11:49:36.554+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:49:36.557+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 3.0
-2023-11-07T11:49:46.041+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:49:46.049+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T11:50:01.744+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:50:01.775+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 3.0
-2023-11-07T11:50:21.380+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:50:21.391+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 3.0
-2023-11-07T11:50:40.171+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:50:40.183+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 3.0
-2023-11-07T11:50:53.184+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:50:53.188+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 3.0
-2023-11-07T11:51:02.918+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:51:02.943+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T11:51:16.939+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T11:51:16.979+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 3.0
-2023-11-07T12:00:35.760+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:00:35.762+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 3.0
-2023-11-07T12:00:49.828+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:00:49.832+01:00  INFO 22380 --- [http-nio-8080-exec-1] W.restController.UserRestController      : 3.0
-2023-11-07T12:01:44.450+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:01:44.452+01:00  INFO 22380 --- [http-nio-8080-exec-3] W.restController.UserRestController      : 3.0
-2023-11-07T12:02:01.584+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:02:01.585+01:00  INFO 22380 --- [http-nio-8080-exec-10] W.restController.UserRestController      : 3.0
-2023-11-07T12:02:13.149+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:02:13.151+01:00  INFO 22380 --- [http-nio-8080-exec-9] W.restController.UserRestController      : 3.0
-2023-11-07T12:02:39.027+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:02:39.030+01:00  INFO 22380 --- [http-nio-8080-exec-7] W.restController.UserRestController      : 3.0
-2023-11-07T12:03:02.916+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:03:02.918+01:00  INFO 22380 --- [http-nio-8080-exec-5] W.restController.UserRestController      : 3.0
-2023-11-07T12:03:05.706+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : [WebSite.entities.Evaluation@23, WebSite.entities.Evaluation@24]
-2023-11-07T12:03:05.708+01:00  INFO 22380 --- [http-nio-8080-exec-8] W.restController.UserRestController      : 3.0
-2023-11-07T12:23:10.525+01:00  INFO 22380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-07T12:23:10.666+01:00  INFO 22380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-07T12:23:10.716+01:00  INFO 22380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-11-07T14:38:25.088+01:00  INFO 51358 --- [main] WebSite.WebSiteApplication               : Starting WebSiteApplication using Java 17.0.8.1 with PID 51358 (/home/sansoon/Documents/projets/ProjetsWebSite/WebSite/target/classes started by sansoon in /home/sansoon/Documents/projets/ProjetsWebSite/WebSite)
-2023-11-07T14:38:25.103+01:00  INFO 51358 --- [main] WebSite.WebSiteApplication               : No active profile set, falling back to 1 default profile: "default"
-2023-11-07T14:38:29.567+01:00  INFO 51358 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-07T14:38:29.858+01:00  INFO 51358 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 258 ms. Found 7 JPA repository interfaces.
-2023-11-07T14:38:32.623+01:00  INFO 51358 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-07T14:38:32.662+01:00  INFO 51358 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-07T14:38:32.663+01:00  INFO 51358 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-07T14:38:33.493+01:00  INFO 51358 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-11-07T14:38:33.521+01:00  INFO 51358 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
-2023-11-07T14:38:33.523+01:00  INFO 51358 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8189 ms
-2023-11-07T14:38:34.432+01:00  INFO 51358 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-07T14:38:34.666+01:00  INFO 51358 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
-2023-11-07T14:38:34.677+01:00  INFO 51358 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-07T14:38:35.235+01:00  INFO 51358 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-07T14:38:36.037+01:00  INFO 51358 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-07T14:38:36.091+01:00  INFO 51358 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T09:04:44.106+01:00  INFO 64592 --- [main] WebSite.WebSiteApplication               : Starting WebSiteApplication using Java 17.0.8.1 with PID 64592 (/home/sansoon/Documents/projets/ProjetsWebSite/WebSite/target/classes started by sansoon in /home/sansoon/Documents/projets/ProjetsWebSite/WebSite)
+2023-11-09T09:04:44.155+01:00  INFO 64592 --- [main] WebSite.WebSiteApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T09:04:48.844+01:00  INFO 64592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T09:04:49.210+01:00  INFO 64592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 332 ms. Found 7 JPA repository interfaces.
+2023-11-09T09:04:52.915+01:00  INFO 64592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-09T09:04:52.960+01:00  INFO 64592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T09:04:52.962+01:00  INFO 64592 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-11-09T09:04:54.121+01:00  INFO 64592 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-09T09:04:54.159+01:00  INFO 64592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
+2023-11-09T09:04:54.162+01:00  INFO 64592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9807 ms
+2023-11-09T09:04:55.101+01:00  INFO 64592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-09T09:04:55.513+01:00  INFO 64592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-11-09T09:04:55.536+01:00  INFO 64592 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-09T09:04:56.574+01:00  INFO 64592 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-09T09:04:57.457+01:00  INFO 64592 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T09:04:57.521+01:00  INFO 64592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T09:04:59.082+01:00  INFO 64592 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b56c222
+2023-11-09T09:04:59.092+01:00  INFO 64592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T09:04:59.416+01:00  WARN 64592 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-11-09T09:05:00.640+01:00  INFO 64592 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-09T09:05:06.462+01:00  INFO 64592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-09T09:05:07.516+01:00  INFO 64592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T09:05:11.001+01:00  INFO 64592 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-09T09:05:15.750+01:00  WARN 64592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T09:05:19.010+01:00  INFO 64592 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@525b999, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12f4b3a2, org.springframework.security.web.context.SecurityContextHolderFilter@7f9f3516, org.springframework.security.web.header.HeaderWriterFilter@41861964, org.springframework.security.web.authentication.logout.LogoutFilter@e944541, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35645453, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18a129b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cc655a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36af93ca, org.springframework.security.web.session.SessionManagementFilter@4796ae58, org.springframework.security.web.access.ExceptionTranslationFilter@1baf1268, org.springframework.security.web.access.intercept.AuthorizationFilter@369773fd]
+2023-11-09T09:05:22.486+01:00  INFO 64592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/web'
+2023-11-09T09:05:22.578+01:00  INFO 64592 --- [main] WebSite.WebSiteApplication               : Started WebSiteApplication in 40.916 seconds (process running for 43.462)
+2023-11-09T09:07:13.048+01:00  INFO 64592 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T09:07:13.055+01:00  INFO 64592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T09:07:13.066+01:00  INFO 64592 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms

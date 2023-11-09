@@ -1,8 +1,10 @@
-  <div class="header">
+<div class="header">
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" (click)="openMenu()" >
+      <a class="navbar-brand text-white" href="#">
+        <img src="/assets/Capture d’écran du 2023-11-09 10-22-55.png" height="60" width="50"/>
+      </a>
+      <button class="navbar-toggler " style="margin-bottom: 20px;" type="button" (click)="openMenu()" >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,7 +32,7 @@
   </nav>  
 </div>
 <!-----SideBar------>
-<div class="sidebar">
+<div class="sidebar" >
 <ng-container *ngIf="status">
   <div class="text-center" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel" >
     <div class="offcanvas-header">
