@@ -1,17 +1,19 @@
 import { Adresse } from "./adresse";
 import { Evaluation } from "./evaluation";
+import { Role } from "./role";
 
 export class User {
     constructor(
-       private id:number,
-       private firstName:string,
-       private lastName:string,
-       private username:string,
-       private password:string,
-       private email:string,
-       
-       private addresse:Adresse,
-       private evaluations:Evaluation[],
+       public id:number,
+       public firstName:string,
+       public lastName:string,
+       public username:string,
+       public password:string,
+       public email:string,
+       public dateEntry:Date,
+       public role:Role,
+       public addresse:Adresse,
+       public evaluations:Evaluation[],
         
 
         

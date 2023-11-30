@@ -60,10 +60,11 @@ public class User implements UserDetails{
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="user_adresse_id",foreignKey = @ForeignKey(name="user_adresse_id_fk"))
 	private Adresse adresse;
-	
+	@OneToMany(mappedBy = "user")
+	private Set<RefreshToken> refreshTokens;
 	
 	public User() {
-		super();
+		super(); 
 	}
 	
 	public User(Long id, String firstName, String lastName, String username,String email,String password,
@@ -79,7 +80,30 @@ public class User implements UserDetails{
 		this.dateEntry = dateEntry;
 	}
 
+	
 
+	public User(String username, String email, String password, LocalDate dateEntry, Role role, Adresse adresse) {
+		super();
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.dateEntry = dateEntry;
+		this.role = role;
+		this.adresse = adresse;
+	}
+
+	public User(String firstName, String lastName, String username, String email, String password, LocalDate dateEntry,
+			Role role, Adresse adresse) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.email = email;
+		this.password = password;
+		this.dateEntry = dateEntry;
+		this.role = role;
+		this.adresse = adresse;
+	}
 
 	public Long getId() {
 		return id;
@@ -130,7 +154,13 @@ public class User implements UserDetails{
 		this.dateEntry = dateEntry;
 	}
 
-	
+	public Set<RefreshToken> getRefreshTokens() {
+		return refreshTokens;
+	}
+
+	public void setRefreshTokens(Set<RefreshToken> refreshTokens) {
+		this.refreshTokens = refreshTokens;
+	}
 
 	public Set<Evaluation> getEvaluations() {
 		return evaluations;

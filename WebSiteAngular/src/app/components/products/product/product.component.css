@@ -1,5 +1,8 @@
+i{
+  cursor: pointer;
+}
 .product{
-    border-radius:15px;
+    border-radius: 15px;
     flex: 1 0 calc(19% - 4px);
     margin: 5px;
     position: relative;
@@ -7,24 +10,47 @@
     width: 150px;
     color: white;
     filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
+    margin-bottom: 10px;
+    
+   
     
 }
 .product img{
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;    
     border: 1px solid #000;
     object-fit: cover;
+    border:1px solid white;
+    
 }
-
+#bottomInfo{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
 .product h6, .product p{
     font-weight: bold;
-    color: rgb(245, 236, 236);
     font-family: 'Oswald';
     letter-spacing: 1px;
+    margin-left: 8px;
+}
+.product h6{
+  color: #AE431E;
 }
 
-.infoPlus{
+.product p{
+  color: #8A8635;
+  font-family: 'Dosis';
+  letter-spacing: 1px;
+}
+
+
+.infoPlus,.delete,.edit,.fav,.buy{
     position:relative;
 }
 .infoPlus i{
@@ -35,9 +61,48 @@
     margin-right: 5%;
     font-size: 20px;
     color:#ffffff;
-    
-
 }
+
+.delete i{
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-top: 5%;
+  margin-right: 20%;
+  font-size: 20px;
+  
+}
+
+.edit i{
+  position: absolute;
+  top: 0;
+  right:0;
+  margin-top: 5%;
+  margin-right: 35%;
+  font-size: 20px;
+  
+}
+
+.fav i{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  margin-top: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  color:#AE431E;
+}
+
+.buy i{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  color:#AE431E;
+}
+
 .row-flex {
     display: flex;
     flex-wrap: wrap;
@@ -53,24 +118,37 @@
     margin-bottom: 5px;
     flex: 1 0 calc(23% - 4px);
     height: 250px;
-    
+    margin-bottom: 10px;
     color: white;
     filter: drop-shadow(0 10px 5px rgba(26, 25, 25, 0.521));
 }
 .productInfo img{
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    border: 1px solid #000;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;    
+  border: 1px solid #000;
+  object-fit: cover;
+  border:1px solid white;
 }
 
 .productInfo h6, .productInfo p{
-    font-weight: bold;
-    color: rgb(245, 236, 236);
+  font-weight: bold;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  margin-left: 8px;
 }
 .productInfo h6,.productInfo p{
   font-family: 'Oswald';
+}
+.productInfo h6{
+  color: #AE431E;
+}
+
+.productInfo p{
+  color: #8A8635;
+  font-family: 'Dosis';
+  letter-spacing: 1px;
 }
 
 .productTitle{

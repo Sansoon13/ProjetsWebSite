@@ -1,8 +1,8 @@
 <div class="header">
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">
-        <img src="/assets/Capture d’écran du 2023-11-09 10-22-55.png" height="60" width="50"/>
+    <div class="container-fluid"> 
+      <a class="navbar-brand text-white" [routerLink]="['/home']" id="logo">
+        <img src="/assets/logopetit.png" height="90" />
       </a>
       <button class="navbar-toggler " style="margin-bottom: 20px;" type="button" (click)="openMenu()" >
         <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
               <a class="nav-link" [routerLink]="['panier']" id="panier"><i class="bi bi-cart" style="font-size: 19px;"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" [routerLink]="['login']" id="profil"><i class="bi bi-person-fill" style="font-size: 20px;"></i></a>
+                <a class="nav-link"(click)="loginOrProfil()" id="profil"><i class="bi bi-person-fill" style="font-size: 20px;"></i></a>
                 </li>
         </ul>
       </div>

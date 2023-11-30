@@ -7,19 +7,21 @@ import org.springframework.beans.BeanUtils;
 import WebSite.entities.Adresse;
 import WebSite.entities.Role;
 import WebSite.entities.User;
+import jakarta.validation.constraints.NotNull;
 
 public class UserRequest {
+	@NotNull
 	private String username;
 	private String password;
 	private String lastName;
 	private String firstName;
 	private String email;
-	private Role role=Role.ROle_USER;
+	private Role role;
 	private LocalDate dateEntry;
 	private Adresse adresse;
 	public UserRequest() {
 		
-	}
+	} 
 	
 	public User toUserEntity() {
 		User user=new User();

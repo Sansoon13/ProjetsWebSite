@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormControlName, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Observable, map, startWith, switchMap } from 'rxjs';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { Category } from 'src/app/model/category';
 import { Ingredient } from 'src/app/model/ingredient';
 import { Product } from 'src/app/model/product';
+import { Role } from 'src/app/model/role';
+import { User } from 'src/app/model/user';
 import { CategoryService } from 'src/app/services/category.service';
 import { IngredientService } from 'src/app/services/ingredient.service';
 import { ProductService } from 'src/app/services/product.service';
+import { DeleteProductModalComponent } from '../../modal/delete-product-modal/delete-product-modal.component';
 
 @Component({
   selector: 'app-product',
@@ -29,8 +33,11 @@ export class ProductComponent implements OnInit{
   title!:string;
   tagId:number[]=[];
   allproducts!:Product[];
+  role!:string;
+  
 
-  constructor(private pSrv:ProductService, private cSrv:CategoryService,private ingSrv:IngredientService,private fb:FormBuilder) { }
+  constructor(private pSrv:ProductService, private cSrv:CategoryService,private ingSrv:IngredientService,private fb:FormBuilder,
+                private dialog:MatDialog) { }
   
   ngOnInit(): void {
     this.pSrv.getAllProducts().subscribe({
@@ -52,8 +59,15 @@ export class ProductComponent implements OnInit{
     });
 
 
+    //ROLE
+    const userConnected=sessionStorage.getItem('user');
+    if(userConnected){
+      const user:User=JSON.parse(userConnected);
+      this.role=""+user.role;
+      console.log("role = "+user.role);
+    }
     
-    
+
   }
 
   
@@ -85,12 +99,7 @@ export class ProductComponent implements OnInit{
       this.pSrv.getByIdWithEvaluations(product.id!).subscribe((p)=>{
         this.rating=this.pSrv.percentavgRating(p.avgRating!);
       });
-      
-        
-      
-    }
-    
-        
+    }  
   }
   
   loadAllProduct(){
@@ -161,7 +170,6 @@ loadProductTag(categoryId:number,event:any){
     console.log(this.tagId);
     }
     this.filteredProducts();
-  
 }
 
 filteredProducts(){
@@ -173,6 +181,32 @@ filteredProducts(){
   {
     this.listproducts=this.allproducts;
   }
+
+}
+
+//supprimer un produit 
+deleteProduct(event:any){
+  let id=event.target.value;
+  this.openDialog
+  if(id){
+    // this.pSrv.deleteById(id).subscribe(result=>{
+    //   console.log("Product deleted");
+    // })
+    console.log("removing product "+id);
+  }
+  
+}
+
+openDialog(enterAnimationDuration:string,exitAnimationDuration:string){
+  const dialogRef=this.dialog.open(DeleteProductModalComponent,{
+    width:'400px',
+    enterAnimationDuration,
+    exitAnimationDuration,
+  });
+  
+  dialogRef.afterClosed().subscribe(result=>{
+    console.log("fermeture du dialog");
+  });
 
 }
 

@@ -36,7 +36,12 @@ spring:
           starttls:
             enable: true
 
-
+jwt:
+  secret: jwtpizza1f2fe5f2skukl5iu84kyukr8th78bdg7er8g7liul87gyul78i9tl7il5r4g654v6ez4fg8e4g5deg6q4dg8qr4grq8g4
+  expiration: 900000 #15 min en ms 
+  refresh-token: 604800000 #10 jours
+  
+  
 server:
   servlet:
     context-path: /web

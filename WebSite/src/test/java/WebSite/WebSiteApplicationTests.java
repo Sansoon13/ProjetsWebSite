@@ -1,5 +1,7 @@
 package WebSite;
 
+import java.time.LocalDate;
+
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +11,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.annotation.Commit;
 
 import WebSite.entities.Adresse;
+import WebSite.entities.Role;
 import WebSite.entities.User;
 import WebSite.repositories.ProductRepository;
-import WebSite.repositories.UserReopsitory;
+import WebSite.repositories.UserRepository;
 import WebSite.services.ProductService;
 import WebSite.services.UserService;
 import jakarta.transaction.Transactional;
@@ -33,20 +36,33 @@ class WebSiteApplicationTests {
 	@Commit
 	@Disabled
 	void contextLoads() {
-		User u1=new User();
-		u1.setEmail("user@email.fr");
-		u1.setPassword(psE.encode("azerty"));
-		u1.setUsername("user1");
-		User u2=new User();
-		u2.setEmail("user2@email.fr");
-		u2.setPassword(psE.encode("azerty"));
-		u2.setUsername("user2");
 		Adresse a=new Adresse(); 
 		a.setRue("blablablabla");
 		a.setCodePostal("blabla");
 		a.setNumero("34");
+		
+		User u1=new User();
+		u1.setEmail("admin@email.fr");
+		u1.setPassword(psE.encode("admin"));
+		u1.setUsername("admin");
+		u1.setRole(Role.ADMIN);
+		u1.setDateEntry(LocalDate.now());
+		u1.setFirstName("Admin");
+		u1.setLastName("Admin");
+		
+		
+//		User u2=new User();
+//		u2.setEmail("user2@email.fr");
+//		u2.setPassword(psE.encode("azerty"));
+//		u2.setUsername("user2");
+//		u2.setDateEntry(LocalDate.now());
+//		u2.setRole(Role.ROle_USER);
+//		
+//		u2.setAdresse(a);
 		u1.setAdresse(a);
+		
 		userSrv.create(u1);
+		//userSrv.create(u2);
 	}
 	@Test
 	@Disabled

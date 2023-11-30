@@ -13,6 +13,10 @@ import { IngredientComponent } from './components/ingredients/ingredient/ingredi
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { ConnexionComponent } from './components/profil/connexion/connexion.component';
 import { RegisterComponent } from './components/profil/register/register.component';
+import { ProfilComponent } from './components/profil/profil/profil.component';
+import { Token } from '@angular/compiler';
+import { DeleteProductModalComponent } from './components/modal/delete-product-modal/delete-product-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,14 +29,20 @@ import { RegisterComponent } from './components/profil/register/register.compone
     IngredientComponent,
     CarouselComponent,
     ConnexionComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfilComponent,
+    DeleteProductModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule  
+    ReactiveFormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    
+      
   ],
   providers: [],
   bootstrap: [AppComponent]

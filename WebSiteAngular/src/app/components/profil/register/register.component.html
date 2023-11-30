@@ -1,45 +1,30 @@
 
 
 
-<section class="vh-100">
-    <div class="container-fluid h-custom">
-      <div class="row  d-flex justify-content-center align-items-center h-100">
+<section class="container-fluid vh-100 ">
+    <div class="container  h-custom ">
+      <div class="row d-flex justify-content-center">
         
-        <div class="col-md-9 col-lg-6 col-xl-5 px-4 login">
-          <form>
+        <div class="col-md-9  col-lg-6 col-xl-5 px-4 login">
+          <form [formGroup]="formulaireReg" (ngSubmit)="register()">
             <div class="row d-flex flex-row align-items-center justify-content-center justify-content-lg-center text-center" id="titre">
-                    <h4 class="mb-0 me-3 mt-2">WELCOME </h4>
+                    <h4 class="mb-0 me-3">WELCOME </h4>
                     <h6 class="mt-2"><span class="fw-bolder">Register</span> with your Email </h6>
                 
             </div>
-           <!--  Divider -->
-           <div class="divider d-flex align-items-center mt-3" id="divider">
-            <p class="text-center fw-bold mx-3 mb-0">Or</p>
-          </div>
-      </form>
-        <div class="buttons d-flex justify-content-center">
-            <div class="form-group" id="btnG">
-                <button type="button" class="btn" id="btnGoogle"><i class="bi bi-google"></i></button>
-            </div>
-            <div class="form-group" id="btnF">
-                <button type="button" class="btn" id="btnFacebook"><i class="bi bi-facebook"></i></button>
-            </div>
-            <div class="form-group" id="btnT">
-                <button type="button" class="btn" id="btnTwitter"><i class="bi bi-twitter"></i></button>
-            </div>
-        </div>
+         
     
             <div class="row">
                 <!-- First Name input-->
-                <div class="col form-group mt-1">
+                <div class="col form-group ">
                     <label for="firstName" id="label">First Name</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="firstName" 
+                    <input type="text" class="form-control" formControlName="firstName" id="username" aria-describedby="firstName" 
                     placeholder="Enter a valid first name">
                 </div>
                 <!-- Last Name input-->
-                <div class="col form-group mt-1">
+                <div class="col form-group">
                     <label for="lastName" id="label">Last Name</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="lastName" 
+                    <input type="text" class="form-control" formControlName="lastName" id="username" aria-describedby="lastName" 
                     placeholder="Enter a valid last name">
                 </div>
             </div>
@@ -47,7 +32,7 @@
             <!-- Username input -->
             <div class="col form-group mt-2">
                 <label for="exampleInputEmail1" id="label">Username</label>
-                <input type="text" class="form-control" id="username" aria-describedby="username" 
+                <input type="text" class="form-control" formControlName="username" id="username" aria-describedby="username" 
                 placeholder="Enter a valid username">
                 
             </div>
@@ -67,33 +52,51 @@
             </div>
             <div class="row">
                 <!-- Password input -->
-                <div class="col form-group mt-2">
+                <div class="col form-group mt-1">
                     <label for="exampleInputEmail1" id="label">Password</label>
-                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Enter password">
+                    <input type="password" class="form-control" formControlName="password" id="password" aria-describedby="password" placeholder="Enter password">
+                    <small *ngIf="formulaireReg.get('password')?.hasError('required') && formulaireReg.get('password')?.dirty">
+                        Password required
+                    </small>
                 </div>
+              
                 <!-- Password input -->
-                <div class="col form-group mt-2">
+                <div class="col form-group mt-1">
                     <label for="exampleInputEmail1" id="label">Confirm Password</label>
-                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Confirm the password">
+                    <input type="password" class="form-control" formControlName="password2" id="password" aria-describedby="password" placeholder="Confirm the password">
                 </div>
             </div>
+            <small *ngIf="formulaireReg.get('groupPassword.password2')?.hasError('passwordDifferent') && formulaireReg.get('groupPassword.password')?.dirty && formulaireReg.get('groupPassword.password2')?.dirty">
+                password doesn't match
+            </small>
             <div class="col form-group mt-2">
                 <label for="exampleInputEmail1" id="label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="password" placeholder="Enter a valid email">
+                <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="email" placeholder="Enter a valid email">
+                <small *ngIf="formulaireReg.get('email')?.hasError('required') && formulaireReg.get('email')?.dirty">
+                    email required
+                </small>
             </div>
   
             
+             
+             
+       
+
             <div class="form-group mt-4" id="btnL">
-                <button type="submit" class="btn" id="btnLogin"><span>Register</span></button>
+                <button type="submit" class="btn" id="btnLogin" [disabled]="formulaireReg.invalid"  ><span>Register</span></button>
             </div>
-            
-        
+        </form>
+        <!-- Sign Up -->
+        <div class="register mt-3">
+            <small>Have an account ? <a (click)="signUp()"><span class="fw-bolder">Sign Up</span></a></small>
+        </div>
       
 
         </div>
-    <div class="col">
-        
-    </div>  
+        <div class="col-md-9 col-lg-6 col-xl-5 p-0 " id="sideImage">
+            <img src="/assets/imageRegister.png"
+              class="img-fluid h-100" alt="Sample image">
+          </div>  
     </div>
 
     </div>

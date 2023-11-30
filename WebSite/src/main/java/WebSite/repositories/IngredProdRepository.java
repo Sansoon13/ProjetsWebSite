@@ -18,4 +18,5 @@ public interface IngredProdRepository extends JpaRepository<IngredProd,Long>{
 	Optional<IngredProd> findByIngredientIdAndProductId(Long ingredientId,Long productId);
 	Optional<IngredProd> findByIngredientAndProduct(Ingredient ingredient,Product product);
 	
+	void deleteByProduct(Product product);
 }

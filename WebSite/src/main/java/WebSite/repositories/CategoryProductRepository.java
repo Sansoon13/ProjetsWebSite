@@ -14,4 +14,5 @@ public interface CategoryProductRepository extends JpaRepository<CategoryProduct
 		List<CategoryProduct> findByCategory(Category category);
 		List<CategoryProduct> findByProduct(Product product);
 		List<CategoryProduct> findByCategoryAndProduct(Category category,Product product);
+		void deleteByProduct(Product product);
 }

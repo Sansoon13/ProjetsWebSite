@@ -13,18 +13,21 @@ import org.springframework.web.multipart.MultipartFile;
 
 import WebSite.entities.User;
 import WebSite.exceptions.UserException;
-import WebSite.repositories.UserReopsitory;
+import WebSite.repositories.UserRepository;
 import jakarta.persistence.Access;
 
 @Service
 public class UserService {
 	@Autowired
-	private UserReopsitory userRepo;
+	private UserRepository userRepo;
 	@Autowired
 	private PasswordEncoder psE;
 	
 	//Authentification de l'utilisateur
 	public Optional<User> Authentification(String username,String password) {
+		if(username==null || password==null) {
+			throw new UserException("username or password is null");
+		}
 		Optional<User> optUser=userRepo.findByUsername(username);
 		if(optUser.isPresent() && psE.matches(password, optUser.get().getPassword())){
 			System.out.println("authentification réussi");

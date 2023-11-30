@@ -47,3 +47,8 @@
   .nav{
     position: fixed;
   }
+  
+  #logo img{
+    background-size: cover;
+    overflow: hidden;
+  }

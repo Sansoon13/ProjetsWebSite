@@ -14,13 +14,21 @@ import WebSite.entities.Category;
 import WebSite.entities.Evaluation;
 import WebSite.entities.Ingredient;
 import WebSite.entities.Product;
+import WebSite.repositories.CategoryProductRepository;
+import WebSite.repositories.EvaluationRepository;
+import WebSite.repositories.IngredProdRepository;
 import WebSite.repositories.ProductRepository;
 
 @Service
 public class ProductService {
 	@Autowired
 	private ProductRepository productRepo;
-	
+	@Autowired
+	private EvaluationRepository evalRepo;
+	@Autowired
+	private CategoryProductRepository catProRepo;
+	@Autowired
+	private IngredProdRepository ingProRepo;
 	
 	public Product create(Product product) {
 		if(product==null) {
@@ -159,6 +167,25 @@ public class ProductService {
 	
 	public List<Product> findAllFetchCat(){
 		return productRepo.findAllFetchCategories();
+	}
+	
+	public void DeleteById(Long id) {
+		delete(findById(id));
+	}
+	
+	public void delete(Product product) {
+		if(product==null) {
+			throw new RuntimeException("product is null");
+		}
+		if(product.getId()==null) {
+			throw new RuntimeException("id is missing/null");
+		}
+		
+		evalRepo.deleteByProduct(product);
+		catProRepo.deleteByProduct(product);
+		ingProRepo.deleteByProduct(product);
+		productRepo.delete(product);
+		
 	}
 	
 }

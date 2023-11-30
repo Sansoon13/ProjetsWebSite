@@ -88,11 +88,27 @@
             <div [ngClass]="{'product' :productActif!=p,'productInfo' : productActif==p}">
                 <div  class="infoPlus"><a class="" (click)="afficherInfo(p)">
                   <i class="bi bi-file-plus-fill"></i>
-                  <i *ngIf="productActif==p" class="bi bi-file-minus-fill"></i></a></div>
-                <img class="fill" src="{{p.image}}" alt="product image" />
-                <div class="position-absolute bottom-0 start-0 mx-2">
-                    <h6 style="font-size: 15px;">{{p.title}}</h6>
-                    <p style="font-size: 15px;">{{p.price}} €</p>
+                 
+                  <i *ngIf="productActif==p" class="bi bi-file-minus-fill"></i></a>
+                </div>
+                <!--- ADMIN --->
+                <ng-container *ngIf="role=='ADMIN'">
+                <div class="delete">
+                  <i class="bi bi-file-x-fill" (click)="deleteProduct($event)"></i>
+                </div>
+                <div class="edit">
+                  <i class="bi bi-pencil-square"></i>
+                </div></ng-container>
+                 
+                <div class="h-75"><img class="fill" src="{{p.image}}" alt="product image" /></div>
+                 <!-- <img class="fill" src="{{p.image}}" alt="product image" />  -->
+                <div class="position-absolute bottom-0 start-0  w-100 " id="bottomInfo">
+                  
+                    <h6 style="font-size: 15px;" class="mt-1 position-relative" >{{p.title}}</h6>
+                    <div class="fav"><a><i class="bi bi-bookmark-heart"></i></a></div>
+                    <p style="font-size: 15px;" class="position-relative">{{p.price}} €</p>
+                    <div class="buy"><a><i class="bi bi-cart-plus-fill"></i></a></div>
+
                     <!-- <p>{{p.description}}</p> -->
                 </div>
             </div>

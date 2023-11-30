@@ -34,6 +34,10 @@ export class ProductService {
     return this.httpClient.get<Product[]>(this.url+`/all/cat`);
   }
 
+  deleteById(id:number){
+    return this.httpClient.delete(this.url+'/delete'+`/${id}`);
+  }
+
   //Title
   getTitle(title:string): Observable<Product[]>{
     console.log("title = "+title);

@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-menu',
@@ -26,6 +27,18 @@ export class MenuComponent {
     
 }
 
+loginOrProfil(){
+  const userConnected=sessionStorage.getItem('user');
+  if(userConnected){
+    const user:User=JSON.parse(userConnected);
+    console.log("user connecté "+user.username);
+    this.router.navigateByUrl('/profil');
+  }else{
+    console.log("user non connecté");
+    this.router.navigateByUrl('/login');
+  }
+  
+}
 
 
   

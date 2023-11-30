@@ -2,8 +2,10 @@ package WebSite.response.user;
 
 import java.time.LocalDate;
 
+
 import org.springframework.beans.BeanUtils;
 
+import WebSite.entities.Role;
 import WebSite.entities.User;
 
 public class UserResponse {
@@ -12,15 +14,16 @@ public class UserResponse {
 	private String lastName;
 	private String firstName;
 	private LocalDate dateEntry;
+	private Role role;
 	private byte[] image;
 	
 	public UserResponse() {
 		
 	}
 	
-	public UserResponse(User user) {
+	public UserResponse(User user) { 
 		BeanUtils.copyProperties(user, this);
-		
+		 
 	}
 
 	public Long getId() {
@@ -69,6 +72,14 @@ public class UserResponse {
 
 	public void setImage(byte[] image) {
 		this.image = image;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
 	}
 	
 	
