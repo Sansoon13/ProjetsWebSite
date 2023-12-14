@@ -1,64 +1,93 @@
-2023-11-30T09:00:09.447+01:00  INFO 4823 --- [main] WebSite.WebSiteApplication               : Starting WebSiteApplication using Java 17.0.8.1 with PID 4823 (/home/sansoon/Documents/projets/ProjetsWebSite/WebSite/target/classes started by sansoon in /home/sansoon/Documents/projets/ProjetsWebSite/WebSite)
-2023-11-30T09:00:09.506+01:00  INFO 4823 --- [main] WebSite.WebSiteApplication               : No active profile set, falling back to 1 default profile: "default"
-2023-11-30T09:00:13.004+01:00  INFO 4823 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-30T09:00:13.606+01:00  INFO 4823 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 443 ms. Found 8 JPA repository interfaces.
-2023-11-30T09:00:21.030+01:00  INFO 4823 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-30T09:00:21.094+01:00  INFO 4823 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-30T09:00:21.095+01:00  INFO 4823 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-30T09:00:22.475+01:00  INFO 4823 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-11-30T09:00:22.510+01:00  INFO 4823 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
-2023-11-30T09:00:22.516+01:00  INFO 4823 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12833 ms
-2023-11-30T09:00:23.863+01:00  INFO 4823 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-30T09:00:24.225+01:00  INFO 4823 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
-2023-11-30T09:00:24.237+01:00  INFO 4823 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-30T09:00:24.991+01:00  INFO 4823 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-30T09:00:25.575+01:00  INFO 4823 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-30T09:00:25.651+01:00  INFO 4823 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-30T09:00:27.627+01:00  INFO 4823 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cbe72b9
-2023-11-30T09:00:27.635+01:00  INFO 4823 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-30T09:00:27.917+01:00  WARN 4823 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-30T09:00:29.572+01:00  INFO 4823 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-30T09:00:34.052+01:00  INFO 4823 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-30T09:00:34.343+01:00  INFO 4823 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-30T09:00:36.463+01:00  INFO 4823 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-11-30T09:00:40.573+01:00  WARN 4823 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-30T09:00:42.113+01:00  INFO 4823 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48d68740, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@419df81e, org.springframework.security.web.context.SecurityContextHolderFilter@2f71bb66, org.springframework.security.web.header.HeaderWriterFilter@76b195d, org.springframework.security.web.authentication.logout.LogoutFilter@15500a8, WebSite.filter.JwtAuthenticationFilter@7e7740a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@207512c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74cf108b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50cf26b7, org.springframework.security.web.session.SessionManagementFilter@376aaeec, org.springframework.security.web.access.ExceptionTranslationFilter@39482f2b, org.springframework.security.web.access.intercept.AuthorizationFilter@24e5a4e0]
-2023-11-30T09:00:43.440+01:00  INFO 4823 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/web'
-2023-11-30T09:00:43.469+01:00  INFO 4823 --- [main] WebSite.WebSiteApplication               : Started WebSiteApplication in 36.351 seconds (process running for 38.033)
-2023-11-30T09:00:51.150+01:00  INFO 4823 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-30T09:00:51.155+01:00  INFO 4823 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-30T09:00:51.171+01:00  INFO 4823 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2023-11-30T09:12:13.672+01:00  INFO 4823 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 2412 ms
-2023-11-30T09:15:03.297+01:00  INFO 4823 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-30T09:15:03.704+01:00  INFO 4823 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-30T09:15:04.333+01:00  INFO 4823 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-11-30T09:15:13.651+01:00  INFO 6035 --- [main] WebSite.WebSiteApplication               : Starting WebSiteApplication using Java 17.0.8.1 with PID 6035 (/home/sansoon/Documents/projets/ProjetsWebSite/WebSite/target/classes started by sansoon in /home/sansoon/Documents/projets/ProjetsWebSite/WebSite)
-2023-11-30T09:15:13.661+01:00  INFO 6035 --- [main] WebSite.WebSiteApplication               : No active profile set, falling back to 1 default profile: "default"
-2023-11-30T09:15:17.895+01:00  INFO 6035 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-30T09:15:18.503+01:00  INFO 6035 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 530 ms. Found 8 JPA repository interfaces.
-2023-11-30T09:15:23.708+01:00  INFO 6035 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-30T09:15:23.775+01:00  INFO 6035 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-30T09:15:23.778+01:00  INFO 6035 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
-2023-11-30T09:15:24.995+01:00  INFO 6035 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-11-30T09:15:25.025+01:00  INFO 6035 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
-2023-11-30T09:15:25.028+01:00  INFO 6035 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11176 ms
-2023-11-30T09:15:25.909+01:00  INFO 6035 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-30T09:15:26.160+01:00  INFO 6035 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
-2023-11-30T09:15:26.170+01:00  INFO 6035 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-30T09:15:26.967+01:00  INFO 6035 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-30T09:15:27.466+01:00  INFO 6035 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-30T09:15:27.534+01:00  INFO 6035 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-30T09:15:29.161+01:00  INFO 6035 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33891646
-2023-11-30T09:15:29.168+01:00  INFO 6035 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-30T09:15:29.367+01:00  WARN 6035 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2023-11-30T09:15:30.563+01:00  INFO 6035 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-11-30T09:15:33.547+01:00  INFO 6035 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-11-30T09:15:33.828+01:00  INFO 6035 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-30T09:15:35.282+01:00  INFO 6035 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-11-30T09:15:38.807+01:00  WARN 6035 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-30T09:15:40.087+01:00  INFO 6035 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@570f2cf7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29478556, org.springframework.security.web.context.SecurityContextHolderFilter@54fb9c08, org.springframework.security.web.header.HeaderWriterFilter@4b7272d6, org.springframework.security.web.authentication.logout.LogoutFilter@48d68740, WebSite.filter.JwtAuthenticationFilter@7d30007d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dd729, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@767785a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d0ea3a9, org.springframework.security.web.session.SessionManagementFilter@6c3600b7, org.springframework.security.web.access.ExceptionTranslationFilter@2af781f3, org.springframework.security.web.access.intercept.AuthorizationFilter@1fdc2d45]
-2023-11-30T09:15:41.319+01:00  INFO 6035 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/web'
-2023-11-30T09:15:41.349+01:00  INFO 6035 --- [main] WebSite.WebSiteApplication               : Started WebSiteApplication in 30.487 seconds (process running for 32.137)
-2023-11-30T09:16:05.864+01:00  INFO 6035 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-30T09:16:05.865+01:00  INFO 6035 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-30T09:16:05.871+01:00  INFO 6035 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-14T16:01:01.101+01:00  INFO 49555 --- [main] WebSite.WebSiteApplication               : Starting WebSiteApplication using Java 17.0.8.1 with PID 49555 (/home/sansoon/Documents/projets/ProjetsWebSite/WebSite/target/classes started by sansoon in /home/sansoon/Documents/projets/ProjetsWebSite/WebSite)
+2023-12-14T16:01:01.138+01:00  INFO 49555 --- [main] WebSite.WebSiteApplication               : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T16:01:05.133+01:00  INFO 49555 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T16:01:05.432+01:00  INFO 49555 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263 ms. Found 8 JPA repository interfaces.
+2023-12-14T16:01:09.314+01:00  INFO 49555 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-14T16:01:09.366+01:00  INFO 49555 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-14T16:01:09.368+01:00  INFO 49555 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-12-14T16:01:10.453+01:00  INFO 49555 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-14T16:01:10.480+01:00  INFO 49555 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
+2023-12-14T16:01:10.483+01:00  INFO 49555 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9066 ms
+2023-12-14T16:01:11.794+01:00  INFO 49555 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T16:01:12.152+01:00  INFO 49555 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-12-14T16:01:12.174+01:00  INFO 49555 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-12-14T16:01:13.084+01:00  INFO 49555 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-14T16:01:14.546+01:00  INFO 49555 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T16:01:14.616+01:00  INFO 49555 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-14T16:01:16.718+01:00  INFO 49555 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bab78ce
+2023-12-14T16:01:16.726+01:00  INFO 49555 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-14T16:01:17.107+01:00  WARN 49555 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-12-14T16:01:18.309+01:00  INFO 49555 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-12-14T16:01:20.571+01:00 ERROR 49555 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity : WebSite.entities.User
+2023-12-14T16:01:20.573+01:00  WARN 49555 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity : WebSite.entities.User
+2023-12-14T16:01:20.574+01:00  INFO 49555 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-14T16:01:20.611+01:00  INFO 49555 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-14T16:01:20.617+01:00  INFO 49555 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-14T16:01:20.661+01:00  INFO 49555 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-14T16:01:20.736+01:00 ERROR 49555 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity : WebSite.entities.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at WebSite.WebSiteApplication.main(WebSiteApplication.java:10) ~[classes/:na]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.InstantiationException: Could not instantiate entity : WebSite.entities.User
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 16 common frames omitted
+Caused by: org.hibernate.InstantiationException: Could not instantiate entity : WebSite.entities.User
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:100) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$18(AbstractEntityPersister.java:4841) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.util.LazyValue.getValue(LazyValue.java:30) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.engine.internal.UnsavedValueFactory.getUnsavedIdentifierValue(UnsavedValueFactory.java:45) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.metamodel.mapping.internal.BasicEntityIdentifierMappingImpl.<init>(BasicEntityIdentifierMappingImpl.java:119) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.generateIdentifierMapping(AbstractEntityPersister.java:5186) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.lambda$prepareMappingModel$19(AbstractEntityPersister.java:4846) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.processSubPart(MappingModelCreationProcess.java:164) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:4844) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:4684) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.execute(MappingModelCreationProcess.java:85) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.process(MappingModelCreationProcess.java:43) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:201) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.initializeMappingModel(SessionFactoryImpl.java:320) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:270) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	... 20 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:97) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	... 39 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The type java.io.ObjectOutputStream cannot be resolved. It is indirectly referenced from required type java.lang.Throwable
+	The import java.util.Arrays cannot be resolved
+	Arrays cannot be resolved
+
+	at WebSite.entities.User.<init>(User.java:1) ~[classes/:na]
+	... 45 common frames omitted
+

@@ -20,7 +20,7 @@ import io.jsonwebtoken.security.Keys;
 @PropertySource(value= {"classpath:application.yml"})
 @Service
 public class JwtUtil {
-	@Value("${jwt.secret}")
+	@Value("")
 	private String secret;
 	@Value("#{new Long('${jwt.expiration}')}")
 	private Long expiration;

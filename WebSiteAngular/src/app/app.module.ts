@@ -14,9 +14,12 @@ import { CarouselComponent } from './components/home/carousel/carousel.component
 import { ConnexionComponent } from './components/profil/connexion/connexion.component';
 import { RegisterComponent } from './components/profil/register/register.component';
 import { ProfilComponent } from './components/profil/profil/profil.component';
-import { Token } from '@angular/compiler';
 import { DeleteProductModalComponent } from './components/modal/delete-product-modal/delete-product-modal.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ConfirmationSuppressionModalComponent } from './modal/confirmation-suppression-modal/confirmation-suppression-modal.component';
+import { EditProductModalComponent } from './components/modal/edit-product-modal/edit-product-modal.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     ProfilComponent,
     DeleteProductModalComponent,
+    ConfirmationSuppressionModalComponent,
+    EditProductModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ReactiveFormsModule,
     MatDialogModule,
-    BrowserAnimationsModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+   
+    
+    
+
+    
     
       
   ],

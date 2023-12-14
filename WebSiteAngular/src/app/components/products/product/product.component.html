@@ -94,7 +94,7 @@
                 <!--- ADMIN --->
                 <ng-container *ngIf="role=='ADMIN'">
                 <div class="delete">
-                  <i class="bi bi-file-x-fill" (click)="deleteProduct($event)"></i>
+                  <i class="bi bi-file-x-fill" (click)="openDialog(p.id!,'0ms','0ms')"></i>
                 </div>
                 <div class="edit">
                   <i class="bi bi-pencil-square"></i>

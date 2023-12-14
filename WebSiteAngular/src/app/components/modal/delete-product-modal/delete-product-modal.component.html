@@ -1,20 +1,22 @@
 
-
-  <div mat-dialog-title class="modal-header">
-    <h5 class="modal-title" id="exampleModalLabel">REMOVING A PRODUCT</h5>
+<div class="dialog">
+  <div  class="modal-header">
+    <h5 mat-dialog-title class="modal-title" id="exampleModalLabel">REMOVING A PRODUCT</h5>
     <button
       type="button"
-      class="btn-close"
-      aria-label="Close"
-     
-    ></button>
+      class="btn"
+     mat-dialog-close
+    ><i class="bi bi-x-square"></i></button>
   </div>
+  <hr>
   <div mat-dialog-content class="modal-body">  
-    <p>Vous etes sur le point de supprimer le produit :</p>
-    <p>Cette action est irréversible. Voulez-vous vraiment procéder à la suppression ?</p></div>
+    <p id="text1">You are about to delete the product :</p>
+    <p><strong>{{nom}}</strong></p>
+    <p>This action is   <strong>irreversible</strong>. Do you really want to delete ?</p></div>
+  <hr>
   <div mat-dialog-actions class="modal-footer">
-    <button type="button" class="btn btn-secondary" >
+    <button type="button" class="btn btnAnnuler" mat-button mat-dialog-close>
       Close
     </button>
-    <button type="button" class="btn btn-primary">Save changes</button>
-  </div>
+    <button type="button" class="btn btnConfirmer" mat-button (click)="delete()" >Save changes</button>
+  </div></div>

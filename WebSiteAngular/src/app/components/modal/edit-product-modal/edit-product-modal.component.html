@@ -1,0 +1,38 @@
+<form class="example-form">
+    
+        <div class="row">
+            <mat-form-field class="col">
+                <mat-label>Title</mat-label>
+                <input matInput value="{{product.title}}">
+            </mat-form-field>
+            
+            <mat-form-field class="col">
+                <mat-label>Price</mat-label>
+                <input matInput value="{{product.price}}">
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="row">
+            <mat-label>Price</mat-label>
+            <input matInput value="{{product.description}}">
+        </mat-form-field>
+
+        <div class="row">
+        <ng-container *ngFor="let i of ingredients">
+            <div class="border" >
+                <p>{{i.name}}</p>
+                <i class="bi bi-trash"></i>
+            </div>
+        </ng-container>
+        <div class="border">
+            <i class="bi bi-plus-square-dotted"></i>
+        </div>
+    </div>
+
+        <mat-form-field class="example-full-width">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+
+
+    </form>

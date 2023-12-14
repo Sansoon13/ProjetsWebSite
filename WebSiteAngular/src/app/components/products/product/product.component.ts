@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormControlName, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
@@ -13,12 +13,19 @@ import { CategoryService } from 'src/app/services/category.service';
 import { IngredientService } from 'src/app/services/ingredient.service';
 import { ProductService } from 'src/app/services/product.service';
 import { DeleteProductModalComponent } from '../../modal/delete-product-modal/delete-product-modal.component';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
+@Injectable({
+  providedIn:'root',
+})
+
+
 export class ProductComponent implements OnInit{
   showFilter:boolean=false;
   ingredients!:any;
@@ -37,19 +44,12 @@ export class ProductComponent implements OnInit{
   
 
   constructor(private pSrv:ProductService, private cSrv:CategoryService,private ingSrv:IngredientService,private fb:FormBuilder,
-                private dialog:MatDialog) { }
+                private dialog:MatDialog, private router:Router) { }
   
   ngOnInit(): void {
-    this.pSrv.getAllProducts().subscribe({
-      next:(products)=>{
-        this.listproducts=products;
-        console.log("produits"+this.listproducts);
-      },
-      error:(err)=>{
-        console.log("erreur recupération des produits");
-      }
-    });
-    this.cSrv.getAllCategories().subscribe((categories)=>{
+  this.loadAllProduct();
+    
+  this.cSrv.getAllCategories().subscribe((categories)=>{
       this.categories=categories;
     });
 
@@ -57,7 +57,7 @@ export class ProductComponent implements OnInit{
     this.pSrv.getAllFetchCat().subscribe((p)=>{
       this.allproducts=p;
     });
-
+    
 
     //ROLE
     const userConnected=sessionStorage.getItem('user');
@@ -185,29 +185,43 @@ filteredProducts(){
 }
 
 //supprimer un produit 
-deleteProduct(event:any){
-  let id=event.target.value;
-  this.openDialog
+deleteProduct(id:number){
   if(id){
-    // this.pSrv.deleteById(id).subscribe(result=>{
-    //   console.log("Product deleted");
-    // })
-    console.log("removing product "+id);
-  }
+    this.pSrv.deleteById(id).subscribe({
+      next:(r)=>{
+      console.log("Product deleted");
+      //chargement des produits
+      this.pSrv.getAllProducts().subscribe(r=>{
+        this.listproducts=r;
+        console.log("rechargement des produits"+this.listproducts);
+      })
+    },error:(err)=>{
+      console.log("erreur lors de la suppression du produit")
+    }
+
+    })
+    
   
+  } 
 }
 
-openDialog(enterAnimationDuration:string,exitAnimationDuration:string){
+openDialog(id:number,enterAnimationDuration:string,exitAnimationDuration:string){
   const dialogRef=this.dialog.open(DeleteProductModalComponent,{
-    width:'400px',
+    width:'500px',
     enterAnimationDuration,
     exitAnimationDuration,
+    data:{id:id},
   });
   
-  dialogRef.afterClosed().subscribe(result=>{
-    console.log("fermeture du dialog");
-  });
+  dialogRef.afterClosed().subscribe(r=>{
+    console.log('fermeture du dialog')
+    
 
+  })
 }
 
+editProduct(){
+  
 }
+
+} 
